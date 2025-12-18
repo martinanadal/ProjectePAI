@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+
+<body>
+        <h2>Formulari de registre</h2>
+        <form id="formulari" onsubmit="return validarFormulari()">
+
+            <label for="name">El teu nom i cognom:</label><br>
+            <input type="text" id="name" name="name" value=""><br> <!-- Espai per escriure el nom i cognom -->
+            <br>
+
+            <label>La teva edat:</label><br> 
+            <input type="radio" id="0-17" name="rang_edat" value="0-17">0-17<br>
+            <input type="radio" id="18-25" name="rang_edat" value="18-25">18-25<br>
+            <input type="radio" id="26-40" name="rang_edat" value="26-40">26-40<br>
+            <input type="radio" id="41-55" name="rang_edat" value="41-55">41-55<br>
+            <input type="radio" id="+65" name="rang_edat" value="+65">més de 65<br>
+            <br>
+
+            <label for="cp">Codi postal:</label><br>
+            <input type="text" id="cp"><br>
+            <br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <br>
+
+            <label for="contrasenya">Introdueïx la teva contrasenya:</label><br>
+            <input type="password" id="contrasenya" name="contrasenya"><br>
+            <br>
+            
+            <label for="comprovar">Confirmar contrasenya: </label><br> <!-- ja fa sol lo de poder veure el que has escrit, cal que li fem algo?-->
+            <input type="password" id="comprovar" name="comprovar"><br>
+            <br>
+
+            <label for="politica">Accepto la política de privacitat</label>
+            <input type="checkbox" id="politica" name="politica" value="acceptar"><br>
+            <br>
+
+            <button type="button" onclick="onreset()">Esborra</button><br> <!-- falta fer que funcioni-->
+
+            <input type="submit" value="Submit">
+
+        </form>
+        <p id="missatge"></p> <!-- falta fer que funcioni-->
+
+        <script src="final.js"></script>
+
+</body>
+</html>
