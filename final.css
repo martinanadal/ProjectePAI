@@ -1,30 +1,33 @@
+/* Estil general de la pàgina */
 body {
-    font-family:'times new roman', times, serif;
-    }
-
-    p {
-    font-size: 18px;  
-    color: #333333;
-    }
-
-/* form {
-  width: 300px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
 }
 
+/* Títol */
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contenidor del formulari */
+form {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 350px;
+}
+
+/* Labels */
 label {
-  display: block;
-  margin-top: 10px;
+    font-weight: bold;
+    color: #444;
 }
 
-input, select {
-  width: 100%;
-}
-
-button {
-  margin-top: 10px;
-}
-
-#missatge {
-  margin-top: 15px;
-  font-weight: bold;
-} */
+/* Inputs de text, email i password */
+/* input[type="text"],

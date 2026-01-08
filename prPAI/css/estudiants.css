@@ -9,3 +9,43 @@
     font-size: 1.1em;
 }
 
+/* Fitxer CSS estudiants */
+
+/* 1. Estil general del contenidor de resultats */
+#resultats {
+    background-color: #fff8d6;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0c97f;
+    font-size: 1.1em;
+}
+
+/* 2. Estil dels paràgrafs de resultats */
+#resultats p {
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+/* 3. Estil de les llistes generades (exercici 2.3) */
+#resultats ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+#resultats li {
+    margin-bottom: 6px;
+    padding: 4px 0;
+}
+
+/* 4. Estil del formulari del districte (exercici 2.4) */
+#districtes {
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #888;
+}
+
+/* 5. Estil del text destacat */
+#resultats strong {
+    color: #b05a00;
+}

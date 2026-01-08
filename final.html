@@ -8,9 +8,9 @@
 </head>
 
 <body>
-        <h2>Formulari de registre</h2>
-        <form id="formulari" onsubmit="return validarFormulari()">
-
+        <form id="formulari" onsubmit="return validarFormulari()"> 
+            <h2>Formulari de registre</h2>
+    
             <label for="name">El teu nom i cognom:</label><br>
             <input type="text" id="name" name="name" value=""><br> <!-- Espai per escriure el nom i cognom -->
             <br>
@@ -33,11 +33,11 @@
 
             <label for="contrasenya">Introdueïx la teva contrasenya:</label><br>
             <input type="password" id="contrasenya" name="contrasenya"><br>
-            <br>
+            <input type="checkbox" id="mostrar_contrasenya">mostrar<br>
             
             <label for="comprovar">Confirmar contrasenya: </label><br> <!-- ja fa sol lo de poder veure el que has escrit, cal que li fem algo?-->
             <input type="password" id="comprovar" name="comprovar"><br>
-            <br>
+            <input type="checkbox" id="mostrar_contrasenya">mostrar<br>
 
             <label for="politica">Accepto la política de privacitat</label>
             <input type="checkbox" id="politica" name="politica" value="acceptar"><br>
