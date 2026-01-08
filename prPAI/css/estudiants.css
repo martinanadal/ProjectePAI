@@ -1,0 +1,11 @@
+/* Fitxer CSS estudiants */
+
+/* 1. Estil general del contenidor de resultats */
+#resultats {
+    background-color: #fff8d6;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0c97f;
+    font-size: 1.1em;
+}
+
