@@ -104,6 +104,16 @@ function comprovaContrasenyes() {
     return "";
 }
 
+//Mostrar/ocultar contrasenya:
+function mostrarOcultarContrasenya(idInput) {
+    let input = document.getElementById(idInput);
+    if (input.type === "password") {
+        input.type = "text";
+    } else {
+        input.type = "password";
+    }
+}
+
 //Política de privacitat:
 function validarPolitica() {
     let check = document.getElementById("politica");

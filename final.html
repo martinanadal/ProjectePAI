@@ -35,13 +35,15 @@
             <br>
 
             <label for="contrasenya">Introdueïx la teva contrasenya:</label><br>
-            <input type="password" id="contrasenya" name="contrasenya"><br>
-            <input type="checkbox" id="mostrar_contrasenya">mostrar<br>
-            
+            <input type="password" id="contrasenya" name="contrasenya"><br>       
+            <input type="checkbox" onclick="mostrarOcultarContrasenya('contrasenya')"> Mostrar <br>
+            <br>
+
             <label for="comprovar">Confirmar contrasenya: </label><br> <!-- ja fa sol lo de poder veure el que has escrit, cal que li fem algo?-->
             <input type="password" id="comprovar" name="comprovar"><br>
-            <input type="checkbox" id="mostrar_contrasenya">mostrar<br>
-
+            <input type="checkbox" onclick="mostrarOcultarContrasenya('comprovar')"> Mostrar <br>
+            <br>
+            
             <label for="politica">Accepto la política de privacitat</label>
             <input type="checkbox" id="politica" name="politica" value="acceptar"><br>
             <br>
