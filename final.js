@@ -21,9 +21,9 @@ function validarNomCognom() {
 
 //Rang d'edat:
 function validarEdat() {
-    let edatSeleccionada = document.querySelector('input[name="rang_edat"]:checked');
-    if (!edatSeleccionada) {
-        return "Si us plau, selecciona un rang d'edat.";
+    let selectEdat = document.getElementById("edat"); // Recordeu canviar l'HTML!
+    if (selectEdat.value === "") { // La primera opció ha de tenir value=""
+        return "Selecciona una opció d'edat vàlida.";
     }
     return "";
 }

@@ -15,13 +15,16 @@
             <input type="text" id="name" name="name" value=""><br> <!-- Espai per escriure el nom i cognom -->
             <br>
 
-            <label>La teva edat:</label><br> 
-            <input type="radio" id="0-17" name="rang_edat" value="0-17">0-17<br>
-            <input type="radio" id="18-25" name="rang_edat" value="18-25">18-25<br>
-            <input type="radio" id="26-40" name="rang_edat" value="26-40">26-40<br>
-            <input type="radio" id="41-55" name="rang_edat" value="41-55">41-55<br>
-            <input type="radio" id="+65" name="rang_edat" value="+65">més de 65<br>
-            <br>
+            <label for="edat">La teva edat:</label><br> 
+            <select id="edat" name="rang_edat">
+                <option value="">Selecciona una opció</option>
+                <option value="0-17">0-17</option>
+                <option value="18-25">18-25</option>
+                <option value="26-40">26-40</option>
+                <option value="41-55">41-55</option>
+                <option value="56-65">56-65</option> <option value="més de 65">més de 65</option>
+            </select>
+            <br><br>
 
             <label for="cp">Codi postal:</label><br>
             <input type="text" id="cp"><br>
