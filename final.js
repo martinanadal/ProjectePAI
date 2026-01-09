@@ -38,10 +38,28 @@ function validarCodiPostal() {
 }
 
 //validar email:
-// function validarEmail() {
-//     const email = document.getElementById("email").value;
-//     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; //expressió regular bàsica per validar email
+function validarEmail() {
+    let email = document.getElementById("email").value;
+    let posArrova = email.indexOf("@");
+    let posPunt = email.lastIndexOf(".");
 
+    // Comprovacions:
+    // 1. Ha de tenir @ (posArrova no pot ser -1)
+    // 2. Només una @ (indexOf i lastIndexOf han de coincidir)
+    // 3. Ha d'haver-hi un punt DESPRÉS de l'arroba (posPunt > posArrova)
+    // 4. L'arroba no pot ser el primer caràcter (posArrova > 0)
+    
+    if (posArrova === -1 || email.indexOf("@") !== email.lastIndexOf("@")) {
+        return "El correu ha de contenir una única '@'.";
+    }
+    if (posPunt < posArrova) {
+        return "El correu ha de tenir un punt després de l'@'.";
+    }
+    if (posArrova === 0 || posPunt === email.length - 1) {
+        return "El correu no és vàlid.";
+    }
+    return "";
+}
 
 //Contrasenya que contingui tot:
 
