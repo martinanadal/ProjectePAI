@@ -1,19 +1,5 @@
 //PROJECTE FIANAL BIANCA I MARTINA
 
-//Nom i cognom: 
-// function validarNomCognom() {
-//     let nomCognom = document.getElementById("name").value.trim(); //amb el value.trim() eliminem espais innecessaris
-//     let paraules = nomCognom.split(" "); //separem les paraules
-//     let resultat = "";
-//     for (let i = 0; i < paraules.length; i++) {
-//         let paraula = paraules[i];
-//         resultat += paraula.charAt(0).toUpperCase() + paraula.slice(1).toLowerCase() + " "; //convertim la primera lletra en majuscula i la resta en minuscula
-//     }
-//     document.getElementById("name").value = resultat.trim(); //retornem el nom i cognom corregit
-//     if (nomCognom === "") return "El nom i cognoms no pot estar buit.";
-//     return "";
-// }
-
 function validarNomCognom() {
     let nomCognom = document.getElementById("name").value.trim();
     if (nomCognom === "") return "El nom i cognoms no pot estar buit.";
